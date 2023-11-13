@@ -1,3 +1,9 @@
+//Smooth Scroll
+const scroll = new LocomotiveScroll({
+  el: document.querySelector(".main"),
+  smooth: true,
+});
+
 function openOverlay() {
   document.getElementById("overlay").style.width = "100%";
   document.getElementsByClassName("toggle-btn")[0].style.fontSize = "0rem";
