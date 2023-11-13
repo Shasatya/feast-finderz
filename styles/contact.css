@@ -1,0 +1,150 @@
+@import url(./common.css);
+@import url(./homeStyles/navbar.css);
+
+.contact-page h1 {
+    text-align: center;
+    color: #fff;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    font-weight: 100;
+    font-size: 3rem;
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+}
+
+.contact-page h2 {
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    font-weight: 100;
+    text-align: center;
+    color: #fff;
+    font-size: 2.5rem;
+    margin-top: 9rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.contact-page-card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.contact-page-card {
+    text-align: center;
+    color: #ccc;
+    width: 20rem;
+    height: 15rem;
+    background-color: #252529;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.contact-page-card h4 {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.contact-page-card p {
+    margin-top: 1rem;
+}
+
+h6 {
+    font-size: 0.6px;
+    background-color: #ccc;
+    color: #ccc;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.contact-us-form {
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    background-color: #252529;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    width: 19rem;
+    border-radius: 1rem;
+}
+
+.contact-us-form form {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+    width: 90%;
+}
+
+.contact-us-form form label {
+    color: #ccc;
+}
+
+.element {
+    margin: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us-form input {
+    margin: .2rem 0;
+    padding: .6rem;
+    border: 1.5px solid #000;
+    border-radius: 3px;
+}
+
+.contact-us-form input:focus {
+    outline: none
+}
+
+.check-sec {
+    display: flex;
+    margin: .5rem 0
+}
+
+.check-sec p {
+    margin-left: .4rem;
+    color: #ccc;
+}
+
+.contact-us-form button {
+    width: 17rem;
+    padding: .4rem;
+    margin: .3rem 0;
+    color: #fff;
+    background-color: #cd853f;
+    border-radius: 0.8rem;
+    border: none;
+    font-weight: 800;
+    font-size: larger
+}
+
+.contact-us-form button:hover {
+    cursor: pointer
+}
+
+@media (width<820px) {
+    .contact-page h1 {
+        margin: 2rem 0;
+        font-size: 2rem;
+    }
+
+    .contact-page h2 {
+        margin-top: 5rem;
+        font-size: 2rem;
+    }
+
+    .contact-page-card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (width<350px) {
+    .contact-page-card {
+        width: 94%;
+    }
+}

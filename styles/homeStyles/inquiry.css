@@ -1,0 +1,59 @@
+.inquiry {
+    border: 0.2rem solid #cd853f;
+    border-radius: 1rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.6rem;
+    width: clamp(10vw, 20em, 100vw);
+    margin: 3rem auto;
+}
+
+.inquiry h2 {
+    text-align: center;
+    color: #ccc;
+    word-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin: 1rem 0;
+}
+
+.inquiry form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 18rem;
+}
+
+form input {
+    width: 100%;
+    margin: 0.2rem 0;
+    padding: 0.8rem;
+    border: 1.5px solid #000;
+    border-radius: 3px;
+    color: #cd853f;
+    list-style: none;
+}
+
+form button {
+    padding: 0.4rem;
+    margin: 0.4rem 0;
+    color: #fff;
+    background-color: #cd853f;
+    border-radius: 0.8rem;
+    border: none;
+    font-weight: 800;
+    font-size: larger;
+}
+
+form input:focus {
+    outline: none;
+}
+
+form button:hover {
+    cursor: pointer;
+}
+
+@media (width<410px) {
+    .inquiry {
+        border: none;
+    }
+}

@@ -1,0 +1,15 @@
+@import url(/styles/common.css);
+
+@import url(/styles/homeStyles/navbar.css);
+
+@import url(/styles/homeStyles/welcome.css);
+
+@import url(/styles/homeStyles/popularItems.css);
+
+@import url(/styles/homeStyles/visitUs.css);
+
+@import url(/styles/homeStyles/customersReview.css);
+
+@import url(/styles/homeStyles/inquiry.css);
+
+@import url(/styles/homeStyles/footer.css);

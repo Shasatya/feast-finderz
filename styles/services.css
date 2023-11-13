@@ -1,0 +1,104 @@
+@import url(./common.css);
+@import url(./homeStyles/navbar.css);
+
+.service-content {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-content h3 {
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    font-weight: 100;
+    font-size: 2rem;
+    margin-top: 5rem;
+}
+
+.service-card {
+    display: flex;
+    width: 42rem;
+    height: 12.6rem;
+    background-color: #252529;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    margin: 1rem auto;
+    border-radius: 1rem;
+}
+
+.service-card-img-div {
+    height: 100%;
+    width: 100%;
+    background-color: #cd853f;
+    overflow: hidden;
+}
+
+.service-card-img-div img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.mb {
+    margin-bottom: 5rem;
+}
+
+.service-card-text-section {
+    color: #ccc;
+    padding: 1rem 1rem 0.5rem 1rem;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 1.5rem;
+    /* font-size: 0.8rem; */
+}
+
+.avail-now-btn {
+    text-align: center;
+    margin-left: 12rem;
+}
+
+.avail-now-btn button {
+    margin-top: 1.5rem;
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    border: none;
+    font-weight: bold;
+    background-color: #cd853f;
+    color: #fff;
+}
+
+#read-full {
+    margin-right: 1rem;
+    background-color: #007BFF;
+}
+
+@media (width<660px) {
+
+
+    .service-card {
+        display: block;
+        align-items: center;
+        width: 17.875rem;
+        height: 26rem;
+        overflow: hidden;
+    }
+
+    .service-card-img-div {
+        width: 100%;
+        height: 40%;
+    }
+
+    .service-card-text-section {
+        font-size: 0.8rem;
+    }
+
+    .avail-now-btn button {
+        font-weight: 300;
+    }
+
+    .avail-now-btn {
+        margin: 0 1rem;
+    }
+
+}

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="/styles/explore.css">
+    <title>Feast Finderz - Explore</title>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="../index.html" class="logo"><img src="/assets/img/logo.png" alt="" /></a>
+        <div class="links">
+            <li><a href="/pages/explore.html">Explore</a></li>
+            <li><a href="/pages/contact.html">Contact</a></li>
+            <li><a href="/pages/about.html">About</a></li>
+            <li><a href="/pages/articles.html">Articles</a></li>
+            <li><a href="/pages/services.html">Services</a></li>
+        </div>
+        <a href="/pages/login.html" class="action-btn">LOGIN</a>
+        <a href="javascript:void(0)" class="toggle-btn" onclick="openOverlay()">&#9776;</a>
+    </div>
+
+
+    <div id="overlay" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay()">&times;</a>
+        <div class="overlay-content">
+            <li><a href="/pages/explore.html">Explore</a></li>
+            <li><a href="/pages/contact.html">Contact</a></li>
+            <li><a href="/pages/about.html">About</a></li>
+            <li><a href="/pages/articles.html">Articles</a></li>
+            <li><a href="/pages/services.html">Services</a></li>
+            <li><a href="/pages/login.html">Login</a></li>
+        </div>
+    </div>
+
+
+    <div class="search-bar-container">
+        <div class="search-bar-container-content">
+            <h1>Start Searching </h1>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder='Search "Rice"'>
+                <i class="fa-solid fa-microphone" id="mic-button"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="explore-body">
+        <h2>Top Picks</h2>
+
+        <div class="popular-item-card-container mar">
+
+            <div class="card">
+                <div class="img-div">
+                    <img src="https://www.tastingtable.com/img/gallery/20-delicious-indian-dishes-you-have-to-try-at-least-once/pakora-1687277791.webp"
+                        alt="" />
+                </div>
+                <div class="info">
+                    <h3>Pakora</h3>
+                    <div class="revs">
+                        <i class="fa-solid fa-heart"></i>
+                        <p>4.3K</p>
+                    </div>
+                    <button class="order-btn">Order Now</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-div">
+                    <img src="https://www.tastingtable.com/img/gallery/20-delicious-indian-dishes-you-have-to-try-at-least-once/chana-masala-1687277791.webp"
+                        alt="" />
+                </div>
+                <div class="info">
+                    <h3>Chana Masala</h3>
+                    <div class="revs">
+                        <i class="fa-solid fa-heart"></i>
+                        <p>10.1K</p>
+                    </div>
+                    <button class="order-btn">Order Now</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-div">
+                    <img src="https://www.tastingtable.com/img/gallery/20-delicious-indian-dishes-you-have-to-try-at-least-once/dahi-vada-1645057933.webp"
+                        alt="" />
+                </div>
+
+                <div class="info">
+                    <h3>Dahi Vada</h3>
+                    <div class="revs">
+                        <i class="fa-solid fa-heart"></i>
+                        <p>9.1K</p>
+                    </div>
+                    <button class="order-btn">Order Now</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-div">
+                    <img src="https://www.tastingtable.com/img/gallery/20-delicious-indian-dishes-you-have-to-try-at-least-once/seekh-kebab-1645057933.webp"
+                        alt="" />
+                </div>
+                <div class="info">
+                    <h3>Seekh Kebab</h3>
+                    <div class="revs">
+                        <i class="fa-solid fa-heart"></i>
+                        <p>9.1K</p>
+                    </div>
+                    <button class="order-btn">Order Now</button>
+                </div>
+            </div>
+
+            <div class="card hidden">
+                <div class="img-div">
+                    <img src="https://www.tastingtable.com/img/gallery/20-delicious-indian-dishes-you-have-to-try-at-least-once/goan-fish-curry-1645057933.webp"
+                        alt="" />
+                </div>
+
+                <div class="info">
+                    <h3>Goan fish curry</h3>
+                    <div class="revs">
+                        <i class="fa-solid fa-heart"></i>
+                        <p>3.2K</p>
+                    </div>
+                    <button class="order-btn">Order Now</button>
+                </div>
+            </div>
+
+            <div class="card hidden">
+                <div class="img-div">
+                    <img src="https://www.tastingtable.com/img/gallery/20-delicious-indian-dishes-you-have-to-try-at-least-once/vada-pav-1645057933.webp"
+                        alt="" />
+                </div>
+
+                <div class="info">
+                    <h3>Vada pav</h3>
+                    <div class="revs">
+                        <i class="fa-solid fa-heart"></i>
+                        <p>7.2K</p>
+                    </div>
+                    <button class="order-btn">Order Now</button>
+                </div>
+            </div>
+
+            <div class="card hidden">
+                <div class="img-div">
+                    <img src="https://www.tastingtable.com/img/gallery/20-delicious-indian-dishes-you-have-to-try-at-least-once/dal-makhani-1645057933.webp"
+                        alt="" />
+                </div>
+
+                <div class="info">
+                    <h3>Dal makhani</h3>
+                    <div class="revs">
+                        <i class="fa-solid fa-heart"></i>
+                        <p>6.2K</p>
+                    </div>
+                    <button class="order-btn">Order Now</button>
+                </div>
+            </div>
+
+            <div class="card hidden">
+                <div class="img-div">
+                    <img src="https://www.tastingtable.com/img/gallery/20-delicious-indian-dishes-you-have-to-try-at-least-once/madras-curry-1645057933.webp"
+                        alt="" />
+                </div>
+
+                <div class="info">
+                    <h3>Madras curry</h3>
+                    <div class="revs">
+                        <i class="fa-solid fa-heart"></i>
+                        <p>4.1K</p>
+                    </div>
+                    <button class="order-btn">Order Now</button>
+                </div>
+            </div>
+
+
+            <div class="card hidden">
+                <div class="img-div">
+                    <img src="https://www.tastingtable.com/img/gallery/20-delicious-indian-dishes-you-have-to-try-at-least-once/chicken-tikka-masala-1645057933.webp"
+                        alt="" />
+                </div>
+                <div class="info">
+                    <h3>Chicken tikka masala</h3>
+                    <div class="revs">
+                        <i class="fa-solid fa-heart"></i>
+                        <p>4.2K</p>
+                    </div>
+                    <button class="order-btn">Order Now</button>
+                </div>
+            </div>
+
+            <div class="card hidden">
+                <div class="img-div">
+                    <img src="https://www.tastingtable.com/img/gallery/20-delicious-indian-dishes-you-have-to-try-at-least-once/tandoori-chicken-1645057933.webp"
+                        alt="" />
+                </div>
+
+                <div class="info">
+                    <h3>Tandoori chicken</h3>
+                    <div class="revs">
+                        <i class="fa-solid fa-heart"></i>
+                        <p>6.4K</p>
+                    </div>
+                    <button class="order-btn">Order Now</button>
+                </div>
+            </div>
+
+            <div class="card hidden">
+                <div class="img-div">
+                    <img src="https://www.tastingtable.com/img/gallery/20-delicious-indian-dishes-you-have-to-try-at-least-once/vindaloo-1645057933.webp"
+                        alt="" />
+                </div>
+
+                <div class="info">
+                    <h3>Vindaloo</h3>
+                    <div class="revs">
+                        <i class="fa-solid fa-heart"></i>
+                        <p>4.8K</p>
+                    </div>
+                    <button class="order-btn">Order Now</button>
+                </div>
+            </div>
+
+            <div class="card hidden" data-name="chinese">
+                <div class="img-div">
+                    <img src="https://www.tastingtable.com/img/gallery/20-delicious-indian-dishes-you-have-to-try-at-least-once/palak-paneer-1645057933.webp"
+                        alt="" />
+                </div>
+                <div class="info">
+                    <h3>Palak paneer</h3>
+                    <div class="revs">
+                        <i class="fa-solid fa-heart"></i>
+                        <p>5.2K</p>
+                    </div>
+                    <button class="order-btn">Order Now</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="load-more-btn">
+            <button onclick="myFunction()">Load More</button>
+            <div id="snackbar">Please, Login to perform that action!</div>
+        </div>
+
+    </div>
+
+
+
+    <script src="../navScript.js" defer></script>
+    <script>
+        function myFunction() {
+
+            var x = document.getElementById("snackbar");
+
+            x.className = "show";
+
+            setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+        }
+    </script>
+
+    <script>
+
+        function updatePlaceholder() {
+            let placeholders = ['Search "Parathas"', 'Search "Naan"', 'Search "Biriyani"', 'Search "Dal"', 'Search "Kebab"']
+            let randomIndex = Math.floor(Math.random() * placeholders.length);
+            randomPlaceholder = placeholders[randomIndex];
+
+            const placeholder = document.getElementById("search-input");
+            placeholder.placeholder = randomPlaceholder;
+        }
+        setInterval(updatePlaceholder, 7000);
+
+    </script>
+
+</body>
+
+</html>
