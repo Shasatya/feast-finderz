@@ -1,22 +1,10 @@
-// loading Animation
-// let tl = gsap.timeline();
-// tl.to(".main", {
-//   y: "100vh",
-//   scale: 0.6,
-//   duration: 1,
-// });
-// tl.to(".main", {
-//   y: "10vh",
-//   duration: 1,
-//   delay: 1,
-// });
-// tl.to(".main", {
-//   y: "0vh",
-//   // rotate: 360, 
-//   scale: 1,
-// });
-
-
+//loading Animation
+let tl = gsap.timeline();
+tl.from(".main", {
+  x: "100vw",
+  duration: 1,
+  delay: 0.8,
+});
 
 //Popular Items Filter
 let filterButtons = document.querySelectorAll(".filter-buttons button");
