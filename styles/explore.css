@@ -160,10 +160,13 @@
   .search-bar-container {
     height: 50vh;
     border-radius: 0 0 1.6rem 1.6rem;
+    border-bottom: 2px solid #ccc;
+    background-image: url("https://img.freepik.com/free-vector/restaurant-mural-wallpaper_23-2148707022.jpg?w=1480&t=st=1699904357~exp=1699904957~hmac=cb9f43c2c1af3ac0bc69e3ea9b6166555e0c1ea5bc54c652fbd23701e1b1f374");
   }
 
   .search-bar-container-content {
-    right: 2%;
+    right: 50%;
+    transform: translate(50%);
   }
 
   .search-bar-container-content h1 {

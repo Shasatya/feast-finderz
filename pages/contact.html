@@ -8,39 +8,37 @@
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="shortcut icon" href="#">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
   <link rel="stylesheet" href="../styles/contact.css" />
   <title>Feast Finderz - Contact</title>
 </head>
 
 <body>
 
-  <div class="main">
   <div class="navbar">
-  <a href="../index.html" class="logo"><img src="/assets/img/logo.png" alt="" /></a>
-  <div class="links">
+    <a href="../index.html" class="logo"><img src="/assets/img/logo.png" alt="" /></a>
+    <div class="links">
       <li><a href="/pages/explore.html">Explore</a></li>
       <li><a href="/pages/contact.html">Contact</a></li>
       <li><a href="/pages/about.html">About</a></li>
       <li><a href="/pages/articles.html">Articles</a></li>
       <li><a href="/pages/services.html">Services</a></li>
+    </div>
+    <a href="/pages/login.html" class="action-btn">LOGIN</a>
+    <a href="javascript:void(0)" class="toggle-btn" onclick="openOverlay()">&#9776;</a>
   </div>
-  <a href="/pages/login.html" class="action-btn">LOGIN</a>
-  <a href="javascript:void(0)" class="toggle-btn" onclick="openOverlay()">&#9776;</a>
-</div>
 
 
-<div id="overlay" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay()">&times;</a>
-  <div class="overlay-content">
+  <div id="overlay" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay()">&times;</a>
+    <div class="overlay-content">
       <li><a href="/pages/explore.html">Explore</a></li>
       <li><a href="/pages/contact.html">Contact</a></li>
       <li><a href="/pages/about.html">About</a></li>
       <li><a href="/pages/articles.html">Articles</a></li>
       <li><a href="/pages/services.html">Services</a></li>
       <li><a href="/pages/login.html">Login</a></li>
+    </div>
   </div>
-</div>
 
 
   <div class="contact-page">
@@ -97,9 +95,8 @@
   </div>
   </div>
 
- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js" defer></script>
 
- <script src="../navScript.js" defer></script>
+  <script src="../navScript.js" defer></script>
 
 
 </body>
