@@ -14,485 +14,478 @@
 
 <body>
 
-    <div class="main">
+    <div class="navbar">
+        <a href="../index.html" class="logo"><img src="/assets/img/logo.png" alt="" /></a>
+        <div class="links">
+            <li><a href="/pages/explore.html">Explore</a></li>
+            <li><a href="/pages/contact.html">Contact</a></li>
+            <li><a href="/pages/about.html">About</a></li>
+            <li><a href="/pages/articles.html">Articles</a></li>
+            <li><a href="/pages/services.html">Services</a></li>
+        </div>
+        <a href="/pages/login.html" class="action-btn">LOGIN</a>
+        <a href="javascript:void(0)" class="toggle-btn" onclick="openOverlay()">&#9776;</a>
+    </div>
 
-        <div class="navbar">
-            <a href="../index.html" class="logo"><img src="/assets/img/logo.png" alt="" /></a>
-            <div class="links">
-                <li><a href="/pages/explore.html">Explore</a></li>
-                <li><a href="/pages/contact.html">Contact</a></li>
-                <li><a href="/pages/about.html">About</a></li>
-                <li><a href="/pages/articles.html">Articles</a></li>
-                <li><a href="/pages/services.html">Services</a></li>
-            </div>
-            <a href="/pages/login.html" class="action-btn">LOGIN</a>
-            <a href="javascript:void(0)" class="toggle-btn" onclick="openOverlay()">&#9776;</a>
+
+    <div id="overlay" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay()">&times;</a>
+        <div class="overlay-content">
+            <li><a href="/pages/explore.html">Explore</a></li>
+            <li><a href="/pages/contact.html">Contact</a></li>
+            <li><a href="/pages/about.html">About</a></li>
+            <li><a href="/pages/articles.html">Articles</a></li>
+            <li><a href="/pages/services.html">Services</a></li>
+            <li><a href="/pages/login.html">Login</a></li>
+        </div>
+    </div>
+
+
+    <div id="welcome">
+        <div class="welcome-hero-section-content">
+            <h1>Welcome</h1>
+            <p>massMania is now Feast Finderz</p>
+            <button><a href="#popular-items">Start Now</a></button>
+            <button id="playbtn"><a href="./pages/explore.html">More</a></button>
+        </div>
+    </div>
+
+
+    <div id="popular-items">
+
+        <h1>Popular Items</h1>
+        <div class="filter-buttons">
+            <button class="active-filter-btn" data-name="veg">Veg</button>
+            <button data-name="non-veg">Non Veg</button>
+            <button data-name="south-indian">South Indian</button>
+            <button data-name="chinese">Chinese</button>
+            <button id="more-btn">More</button>
         </div>
 
 
-        <div id="overlay" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay()">&times;</a>
-            <div class="overlay-content">
-                <li><a href="/pages/explore.html">Explore</a></li>
-                <li><a href="/pages/contact.html">Contact</a></li>
-                <li><a href="/pages/about.html">About</a></li>
-                <li><a href="/pages/articles.html">Articles</a></li>
-                <li><a href="/pages/services.html">Services</a></li>
-                <li><a href="/pages/login.html">Login</a></li>
-            </div>
-        </div>
+        <div class="filterable-items">
 
+            <div class="popular-item-card-container mar1">
 
-
-        <div id="welcome">
-            <div class="welcome-hero-section-content">
-                <h1>Welcome</h1>
-                <p>massMania is now Feast Finderz</p>
-                <button><a href="#popular-items">Start Now</a></button>
-                <button id="playbtn"><a href="./pages/explore.html">More</a></button>
-            </div>
-        </div>
-
-
-        <div id="popular-items">
-
-            <h1>Popular Items</h1>
-            <div class="filter-buttons">
-                <button class="active-filter-btn" data-name="veg">Veg</button>
-                <button data-name="non-veg">Non Veg</button>
-                <button data-name="south-indian">South Indian</button>
-                <button data-name="chinese">Chinese</button>
-                <button id="more-btn">More</button>
-            </div>
-
-
-            <div class="filterable-items">
-
-                <div class="popular-item-card-container mar1">
-
-                    <div class="card" data-name="veg">
-                        <div class="img-div">
-                            <img src="https://images.pexels.com/photos/2474658/pexels-photo-2474658.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                alt="" />
-                        </div>
-                        <div class="info">
-                            <h3>Samosa</h3>
-                            <div class="revs">
-                                <i class="fa-solid fa-heart"></i>
-                                <p>4.3K</p>
-                            </div>
-                            <button class="order-btn">Order Now</button>
-                        </div>
-                    </div>
-
-                    <div class="card" data-name="veg">
-                        <div class="img-div">
-                            <img src="https://images.pexels.com/photos/9609835/pexels-photo-9609835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                alt="" />
-                        </div>
-                        <div class="info">
-                            <h3>Kadhai Paneer</h3>
-                            <div class="revs">
-                                <i class="fa-solid fa-heart"></i>
-                                <p>10.1K</p>
-                            </div>
-                            <button class="order-btn">Order Now</button>
-                        </div>
-                    </div>
-
-                    <div class="card" data-name="veg">
-                        <div class="img-div">
-                            <img src="https://images.pexels.com/photos/3928854/pexels-photo-3928854.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                alt="" />
-                        </div>
-
-                        <div class="info">
-                            <h3>Paneer Tikka</h3>
-                            <div class="revs">
-                                <i class="fa-solid fa-heart"></i>
-                                <p>9.1K</p>
-                            </div>
-                            <button class="order-btn">Order Now</button>
-                        </div>
-                    </div>
-
-                    <div class="card" data-name="veg">
-                        <div class="img-div">
-                            <img src="https://images.pexels.com/photos/9609842/pexels-photo-9609842.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                alt="" />
-                        </div>
-                        <div class="info">
-                            <h3>Mattar Paneer</h3>
-                            <div class="revs">
-                                <i class="fa-solid fa-heart"></i>
-                                <p>9.1K</p>
-                            </div>
-                            <button class="order-btn">Order Now</button>
-                        </div>
-                    </div>
-
-
-                    <div class="card hide" data-name="non-veg">
-                        <div class="img-div">
-                            <img src="https://www.recipetineats.com/wp-content/uploads/2015/07/Butter-Chicken_5.jpg"
-                                alt="" />
-                        </div>
-                        <div class="info">
-                            <h3>Butter Chicken</h3>
-                            <div class="revs">
-                                <i class="fa-solid fa-heart"></i>
-                                <p>4.2K</p>
-                            </div>
-                            <button class="order-btn">Order Now</button>
-                        </div>
-                    </div>
-
-                    <div class="card hide" data-name="non-veg">
-                        <div class="img-div">
-                            <img src="https://images.pexels.com/photos/9609843/pexels-photo-9609843.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                alt="" />
-                        </div>
-                        <div class="info">
-                            <h3>Egg Biriyani</h3>
-                            <div class="revs">
-                                <i class="fa-solid fa-heart"></i>
-                                <p>11.2K</p>
-                            </div>
-                            <div class="card-btns">
-                                <button class="order-btn">Order Now</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card hide" data-name="non-veg">
-                        <div class="img-div">
-                            <img src="https://images.pexels.com/photos/5031943/pexels-photo-5031943.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                alt="" />
-                        </div>
-                        <div class="info">
-                            <h3>Fried Chicken</h3>
-                            <div class="revs">
-                                <i class="fa-solid fa-heart"></i>
-                                <p>10.2K</p>
-                            </div>
-                            <button class="order-btn">Order Now</button>
-                        </div>
-                    </div>
-
-                    <div class="card hide" data-name="non-veg">
-                        <div class="img-div">
-                            <img src="https://images.pexels.com/photos/12737656/pexels-photo-12737656.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                alt="" />
-                        </div>
-                        <div class="info">
-                            <h3>Chicken Biriyani</h3>
-                            <div class="revs">
-                                <i class="fa-solid fa-heart"></i>
-                                <p>8.2K</p>
-                            </div>
-                            <button class="order-btn">Order Now</button>
-                        </div>
-                    </div>
-
-
-                    <div class="card hide" data-name="south-indian">
-                        <div class="img-div">
-                            <img src="https://img-global.cpcdn.com/recipes/b77ec6f941e2b5b7/1280x1280sq70/photo.webp"
-                                alt="" />
-                        </div>
-
-                        <div class="info">
-                            <h3>Upma</h3>
-                            <div class="revs">
-                                <i class="fa-solid fa-heart"></i>
-                                <p>3.2K</p>
-                            </div>
-                            <button class="order-btn">Order Now</button>
-                        </div>
-                    </div>
-
-                    <div class="card hide" data-name="south-indian">
-                        <div class="img-div">
-                            <img src="https://cdn.pixabay.com/photo/2017/06/16/11/38/breakfast-2408818_1280.jpg"
-                                alt="" />
-                        </div>
-
-                        <div class="info">
-                            <h3>Idli </h3>
-                            <div class="revs">
-                                <i class="fa-solid fa-heart"></i>
-                                <p>7.2K</p>
-                            </div>
-                            <button class="order-btn">Order Now</button>
-                        </div>
-                    </div>
-
-                    <div class="card hide" data-name="south-indian">
-                        <div class="img-div">
-                            <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2642&q=80"
-                                alt="" />
-                        </div>
-
-                        <div class="info">
-                            <h3>Paav Bhaaji</h3>
-                            <div class="revs">
-                                <i class="fa-solid fa-heart"></i>
-                                <p>6.2K</p>
-                            </div>
-                            <button class="order-btn">Order Now</button>
-                        </div>
-                    </div>
-
-                    <div class="card hide" data-name="south-indian">
-                        <div class="img-div">
-                            <img src="https://cdn.pixabay.com/photo/2016/10/25/13/42/indian-1768906_1280.jpg" alt="" />
-                        </div>
-
-                        <div class="info">
-                            <h3>Masala Dosa</h3>
-                            <div class="revs">
-                                <i class="fa-solid fa-heart"></i>
-                                <p>4.1K</p>
-                            </div>
-                            <button class="order-btn">Order Now</button>
-                        </div>
-                    </div>
-
-
-                    <div class="card hide" data-name="chinese">
-                        <div class="img-div">
-                            <img src="https://www.cookwithmanali.com/wp-content/uploads/2014/11/Hakka-Noodles-1.jpg"
-                                alt="" />
-                        </div>
-                        <div class="info">
-                            <h3>Hakka Noodles</h3>
-                            <div class="revs">
-                                <i class="fa-solid fa-heart"></i>
-                                <p>4.2K</p>
-                            </div>
-                            <button class="order-btn">Order Now</button>
-                        </div>
-                    </div>
-
-                    <div class="card hide" data-name="chinese">
-                        <div class="img-div">
-                            <img src="https://www.thespruceeats.com/thmb/T_R22QniykdQ9aPCLKIk-O22Gh4=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/steamed-momos-wontons-1957616-hero-01-1c59e22bad0347daa8f0dfe12894bc3c.jpg"
-                                alt="" />
-                        </div>
-
-                        <div class="info">
-                            <h3>Steamed Momos</h3>
-                            <div class="revs">
-                                <i class="fa-solid fa-heart"></i>
-                                <p>4.2K</p>
-                            </div>
-                            <button class="order-btn">Order Now</button>
-                        </div>
-                    </div>
-
-                    <div class="card hide" data-name="chinese">
-                        <div class="img-div">
-                            <img src="https://www.allrecipes.com/thmb/-695p6NRUJBW08joTDDq9xrMiyM=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/79543-fried-rice-restaurant-style-DDMFS-4x3-b79a6ea27e0344399257ca1df67ca1cd.jpg"
-                                alt="" />
-                        </div>
-
-                        <div class="info">
-                            <h3>Fried Rice</h3>
-                            <div class="revs">
-                                <i class="fa-solid fa-heart"></i>
-                                <p>4.2K</p>
-                            </div>
-                            <button class="order-btn">Order Now</button>
-                        </div>
-                    </div>
-
-                    <div class="card hide" data-name="chinese">
-                        <div class="img-div">
-                            <img src="https://www.crazymasalafood.com/wp-content/images/20-most-favourite-chinese-dishes-of-india/sesame-honey-chilli-potatoes.jpg"
-                                alt="" />
-                        </div>
-                        <div class="info">
-                            <h3>Chilly Potato</h3>
-                            <div class="revs">
-                                <i class="fa-solid fa-heart"></i>
-                                <p>4.2K</p>
-                            </div>
-                            <button class="order-btn">Order Now</button>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="visit-us">
-            <h1>Visit Us</h1>
-
-            <div class="carousel" data-carousel>
-                <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
-                <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
-                <ul data-slides>
-
-                    <li class="slide">
-                        <img src="https://images.pexels.com/photos/4450334/pexels-photo-4450334.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                            alt="Hotel Image #1">
-                        <div class="text">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <p>Lucknow</p>
-                        </div>
-                    </li>
-                    <li class="slide" data-active>
-                        <img src="https://images.pexels.com/photos/4181670/pexels-photo-4181670.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                            alt="Hotel Image #2">
-                        <div class="text">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <p>Kolkata</p>
-                        </div>
-                    </li>
-                    <li class="slide">
-                        <img src="https://images.pexels.com/photos/4916232/pexels-photo-4916232.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                            alt="Hotel Image #3">
-                        <div class="text">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <p>Delhi</p>
-                        </div>
-                    </li>
-                    <li class="slide">
-                        <img src="https://images.pexels.com/photos/5699667/pexels-photo-5699667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                            alt="Hotel Image #4">
-                        <div class="text">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <p>Bangalore</p>
-                        </div>
-                    </li>
-                    <li class="slide">
-                        <img src="https://images.pexels.com/photos/2290070/pexels-photo-2290070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                            alt="Nature Image #6">
-                        <div class="text">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <p>Mumbai</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-
-        <div class="our-loyal-customers">
-            <h1>Our loyal Customers ❤️</h1>
-            <div class="review-section">
-
-                <div class="review">
-                    <div class="review-image">
-                        <img src="https://media.istockphoto.com/id/911250140/photo/confident-male-librarian-working-in-public-library.jpg?s=612x612&w=0&k=20&c=6BjyT35wAgB61lYm_UHCFtAG-9D3SjMBa-q5JxqBHsU="
+                <div class="card" data-name="veg">
+                    <div class="img-div">
+                        <img src="https://images.pexels.com/photos/2474658/pexels-photo-2474658.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                             alt="" />
                     </div>
-                    <h3>Dawn Graves</h3>
-                    <i class="fas fa-quote-left quote"></i>
-                    <p>
-                        I'm a fan of spicy food, so I tried the vindaloo curry, and it did not disappoint. It had the
-                        perfect
-                        balance of heat and flavor, and the tender chunks of meat were a great addition. I'm definitely
-                        coming back
-                        for more.
-                    </p>
-                    <i class="fas fa-quote-right quote"></i>
+                    <div class="info">
+                        <h3>Samosa</h3>
+                        <div class="revs">
+                            <i class="fa-solid fa-heart"></i>
+                            <p>4.3K</p>
+                        </div>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="card" data-name="veg">
+                    <div class="img-div">
+                        <img src="https://images.pexels.com/photos/9609835/pexels-photo-9609835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            alt="" />
+                    </div>
+                    <div class="info">
+                        <h3>Kadhai Paneer</h3>
+                        <div class="revs">
+                            <i class="fa-solid fa-heart"></i>
+                            <p>10.1K</p>
+                        </div>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="card" data-name="veg">
+                    <div class="img-div">
+                        <img src="https://images.pexels.com/photos/3928854/pexels-photo-3928854.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            alt="" />
+                    </div>
+
+                    <div class="info">
+                        <h3>Paneer Tikka</h3>
+                        <div class="revs">
+                            <i class="fa-solid fa-heart"></i>
+                            <p>9.1K</p>
+                        </div>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="card" data-name="veg">
+                    <div class="img-div">
+                        <img src="https://images.pexels.com/photos/9609842/pexels-photo-9609842.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            alt="" />
+                    </div>
+                    <div class="info">
+                        <h3>Mattar Paneer</h3>
+                        <div class="revs">
+                            <i class="fa-solid fa-heart"></i>
+                            <p>9.1K</p>
+                        </div>
+                        <button class="order-btn">Order Now</button>
+                    </div>
                 </div>
 
 
-                <div class="review">
-                    <div class="review-image">
-                        <img src="https://media.istockphoto.com/id/157400344/photo/happy-forties.jpg?s=612x612&w=0&k=20&c=hVK0eBwnrzWFS2inwHJHHRLTDzaKpqOZqzSaQWf85lc="
+                <div class="card hide" data-name="non-veg">
+                    <div class="img-div">
+                        <img src="https://www.recipetineats.com/wp-content/uploads/2015/07/Butter-Chicken_5.jpg"
                             alt="" />
                     </div>
-                    <h3>Olivia Cooper</h3>
-                    <i class="fas fa-quote-left quote"></i>
-                    <p>
-                        As a vegan, I appreciate the variety of vegan options on the menu. I had the chana masala, and
-                        it was
-                        flavorful and hearty. It's great to find a place that caters to different dietary preferences. I
-                        will
-                        certainly return for additional visits.
-                    </p>
-                    <i class="fas fa-quote-right quote"></i>
+                    <div class="info">
+                        <h3>Butter Chicken</h3>
+                        <div class="revs">
+                            <i class="fa-solid fa-heart"></i>
+                            <p>4.2K</p>
+                        </div>
+                        <button class="order-btn">Order Now</button>
+                    </div>
                 </div>
 
-                <div class="review">
-                    <div class="review-image">
-                        <img src="https://media.istockphoto.com/id/143071480/photo/student-standing-on-steps-outdoors.jpg?s=612x612&w=0&k=20&c=A7TPrLH_am1xvXB-c-3zqEFDuJr_UflG50l95BosTnI="
+                <div class="card hide" data-name="non-veg">
+                    <div class="img-div">
+                        <img src="https://images.pexels.com/photos/9609843/pexels-photo-9609843.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                             alt="" />
                     </div>
-                    <h3>Shawn Brown</h3>
-                    <i class="fas fa-quote-left quote"></i>
-                    <p>
-                        I had the masala dosa for breakfast, and it was incredible. The dosa was thin and crispy, and
-                        the potato
-                        filling was so flavorful. The coconut chutney and sambar added an extra layer of deliciousness.
-                    </p>
-                    <i class="fas fa-quote-right quote"></i>
+                    <div class="info">
+                        <h3>Egg Biriyani</h3>
+                        <div class="revs">
+                            <i class="fa-solid fa-heart"></i>
+                            <p>11.2K</p>
+                        </div>
+                        <div class="card-btns">
+                            <button class="order-btn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card hide" data-name="non-veg">
+                    <div class="img-div">
+                        <img src="https://images.pexels.com/photos/5031943/pexels-photo-5031943.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            alt="" />
+                    </div>
+                    <div class="info">
+                        <h3>Fried Chicken</h3>
+                        <div class="revs">
+                            <i class="fa-solid fa-heart"></i>
+                            <p>10.2K</p>
+                        </div>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="card hide" data-name="non-veg">
+                    <div class="img-div">
+                        <img src="https://images.pexels.com/photos/12737656/pexels-photo-12737656.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            alt="" />
+                    </div>
+                    <div class="info">
+                        <h3>Chicken Biriyani</h3>
+                        <div class="revs">
+                            <i class="fa-solid fa-heart"></i>
+                            <p>8.2K</p>
+                        </div>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+
+
+                <div class="card hide" data-name="south-indian">
+                    <div class="img-div">
+                        <img src="https://img-global.cpcdn.com/recipes/b77ec6f941e2b5b7/1280x1280sq70/photo.webp"
+                            alt="" />
+                    </div>
+
+                    <div class="info">
+                        <h3>Upma</h3>
+                        <div class="revs">
+                            <i class="fa-solid fa-heart"></i>
+                            <p>3.2K</p>
+                        </div>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="card hide" data-name="south-indian">
+                    <div class="img-div">
+                        <img src="https://cdn.pixabay.com/photo/2017/06/16/11/38/breakfast-2408818_1280.jpg" alt="" />
+                    </div>
+
+                    <div class="info">
+                        <h3>Idli </h3>
+                        <div class="revs">
+                            <i class="fa-solid fa-heart"></i>
+                            <p>7.2K</p>
+                        </div>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="card hide" data-name="south-indian">
+                    <div class="img-div">
+                        <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2642&q=80"
+                            alt="" />
+                    </div>
+
+                    <div class="info">
+                        <h3>Paav Bhaaji</h3>
+                        <div class="revs">
+                            <i class="fa-solid fa-heart"></i>
+                            <p>6.2K</p>
+                        </div>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="card hide" data-name="south-indian">
+                    <div class="img-div">
+                        <img src="https://cdn.pixabay.com/photo/2016/10/25/13/42/indian-1768906_1280.jpg" alt="" />
+                    </div>
+
+                    <div class="info">
+                        <h3>Masala Dosa</h3>
+                        <div class="revs">
+                            <i class="fa-solid fa-heart"></i>
+                            <p>4.1K</p>
+                        </div>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+
+
+                <div class="card hide" data-name="chinese">
+                    <div class="img-div">
+                        <img src="https://www.cookwithmanali.com/wp-content/uploads/2014/11/Hakka-Noodles-1.jpg"
+                            alt="" />
+                    </div>
+                    <div class="info">
+                        <h3>Hakka Noodles</h3>
+                        <div class="revs">
+                            <i class="fa-solid fa-heart"></i>
+                            <p>4.2K</p>
+                        </div>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="card hide" data-name="chinese">
+                    <div class="img-div">
+                        <img src="https://www.thespruceeats.com/thmb/T_R22QniykdQ9aPCLKIk-O22Gh4=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/steamed-momos-wontons-1957616-hero-01-1c59e22bad0347daa8f0dfe12894bc3c.jpg"
+                            alt="" />
+                    </div>
+
+                    <div class="info">
+                        <h3>Steamed Momos</h3>
+                        <div class="revs">
+                            <i class="fa-solid fa-heart"></i>
+                            <p>4.2K</p>
+                        </div>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="card hide" data-name="chinese">
+                    <div class="img-div">
+                        <img src="https://www.allrecipes.com/thmb/-695p6NRUJBW08joTDDq9xrMiyM=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/79543-fried-rice-restaurant-style-DDMFS-4x3-b79a6ea27e0344399257ca1df67ca1cd.jpg"
+                            alt="" />
+                    </div>
+
+                    <div class="info">
+                        <h3>Fried Rice</h3>
+                        <div class="revs">
+                            <i class="fa-solid fa-heart"></i>
+                            <p>4.2K</p>
+                        </div>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="card hide" data-name="chinese">
+                    <div class="img-div">
+                        <img src="https://www.crazymasalafood.com/wp-content/images/20-most-favourite-chinese-dishes-of-india/sesame-honey-chilli-potatoes.jpg"
+                            alt="" />
+                    </div>
+                    <div class="info">
+                        <h3>Chilly Potato</h3>
+                        <div class="revs">
+                            <i class="fa-solid fa-heart"></i>
+                            <p>4.2K</p>
+                        </div>
+                        <button class="order-btn">Order Now</button>
+                    </div>
                 </div>
 
             </div>
+
         </div>
 
+    </div>
 
-        <div class="inquiry">
-            <h2>For Inquiry Purpose</h2>
+    <div class="visit-us">
+        <h1 class="head">Visit Us</h1>
 
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Email" required>
-                <input type="text" placeholder="Phone Number" required>
-                <input type="text" placeholder="Address" required>
-                <input type="text" placeholder="City" required>
-                <input type="text" placeholder="State" required>
-                <input type="text" placeholder="Zip Code" required>
-                <button type="submit">Send</button>
+        <div class="carousel" data-carousel>
+            <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+            <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+            <ul data-slides>
+
+                <li class="slide">
+                    <img src="https://images.pexels.com/photos/4450334/pexels-photo-4450334.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="Hotel Image #1">
+                    <div class="text">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Lucknow</p>
+                    </div>
+                </li>
+                <li class="slide" data-active>
+                    <img src="https://images.pexels.com/photos/4181670/pexels-photo-4181670.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="Hotel Image #2">
+                    <div class="text">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Kolkata</p>
+                    </div>
+                </li>
+                <li class="slide">
+                    <img src="https://images.pexels.com/photos/4916232/pexels-photo-4916232.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="Hotel Image #3">
+                    <div class="text">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Delhi</p>
+                    </div>
+                </li>
+                <li class="slide">
+                    <img src="https://images.pexels.com/photos/5699667/pexels-photo-5699667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="Hotel Image #4">
+                    <div class="text">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Bangalore</p>
+                    </div>
+                </li>
+                <li class="slide">
+                    <img src="https://images.pexels.com/photos/2290070/pexels-photo-2290070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="Nature Image #6">
+                    <div class="text">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Mumbai</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="our-loyal-customers">
+        <h1 class="head">Our loyal Customers ❤️</h1>
+        <div class="review-section">
+
+            <div class="review">
+                <div class="review-image">
+                    <img src="https://media.istockphoto.com/id/911250140/photo/confident-male-librarian-working-in-public-library.jpg?s=612x612&w=0&k=20&c=6BjyT35wAgB61lYm_UHCFtAG-9D3SjMBa-q5JxqBHsU="
+                        alt="" />
+                </div>
+                <h3>Dawn Graves</h3>
+                <i class="fas fa-quote-left quote"></i>
+                <p>
+                    I'm a fan of spicy food, so I tried the vindaloo curry, and it did not disappoint. It had the
+                    perfect
+                    balance of heat and flavor, and the tender chunks of meat were a great addition. I'm definitely
+                    coming back
+                    for more.
+                </p>
+                <i class="fas fa-quote-right quote"></i>
+            </div>
+
+
+            <div class="review">
+                <div class="review-image">
+                    <img src="https://media.istockphoto.com/id/157400344/photo/happy-forties.jpg?s=612x612&w=0&k=20&c=hVK0eBwnrzWFS2inwHJHHRLTDzaKpqOZqzSaQWf85lc="
+                        alt="" />
+                </div>
+                <h3>Olivia Cooper</h3>
+                <i class="fas fa-quote-left quote"></i>
+                <p>
+                    As a vegan, I appreciate the variety of vegan options on the menu. I had the chana masala, and
+                    it was
+                    flavorful and hearty. It's great to find a place that caters to different dietary preferences. I
+                    will
+                    certainly return for additional visits.
+                </p>
+                <i class="fas fa-quote-right quote"></i>
+            </div>
+
+            <div class="review">
+                <div class="review-image">
+                    <img src="https://media.istockphoto.com/id/143071480/photo/student-standing-on-steps-outdoors.jpg?s=612x612&w=0&k=20&c=A7TPrLH_am1xvXB-c-3zqEFDuJr_UflG50l95BosTnI="
+                        alt="" />
+                </div>
+                <h3>Shawn Brown</h3>
+                <i class="fas fa-quote-left quote"></i>
+                <p>
+                    I had the masala dosa for breakfast, and it was incredible. The dosa was thin and crispy, and
+                    the potato
+                    filling was so flavorful. The coconut chutney and sambar added an extra layer of deliciousness.
+                </p>
+                <i class="fas fa-quote-right quote"></i>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="inquiry">
+        <h2 class="head">For Inquiry Purpose</h2>
+
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Phone Number" required>
+            <input type="text" placeholder="Address" required>
+            <input type="text" placeholder="City" required>
+            <input type="text" placeholder="State" required>
+            <input type="text" placeholder="Zip Code" required>
+            <button type="submit">Send</button>
+        </form>
+
+    </div>
+
+
+    <div class="footer">
+
+        <div class="foot-logo">
+            <img src="/assets/img/logo.png" alt="">
+            <p>&copy; 2023</p>
+            <a href="#" id="privacy">Privacy Policy</a>
+            <a href="#">Terms of Agreement</a>
+        </div>
+
+        <div class="foot-follow">
+            <h3>FOLLOW US</h3>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+        </div>
+
+        <div>
+            <h3>QUICK LINKS</h3>
+            <a href="./pages/explore.html">Explore</a>
+            <a href="./pages/about.html">About</a>
+            <a href="./pages/contact.html">Contact</a>
+            <a href="./pages/services.html">Services</a>
+            <a href="./pages/articles.html">Articles</a>
+        </div>
+
+        <div class="invisible">
+            <h3>NEWSLETTER</h3>
+            <form action="" class="foot-news-letter">
+                <input type="email" placeholder="Your Email Address" required>
+                <br>
+                <button type="submit">SUBSCRIBE NOW</button>
             </form>
-
         </div>
-
-
-        <div class="footer">
-
-            <div class="foot-logo">
-                <img src="/assets/img/logo.png" alt="">
-                <p>&copy; 2023</p>
-                <a href="#" id="privacy">Privacy Policy</a>
-                <a href="#">Terms of Agreement</a>
-            </div>
-
-            <div class="foot-follow">
-                <h3>FOLLOW US</h3>
-                <a href=""><i class="fa-brands fa-github"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-twitter"></i></a>
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-            </div>
-
-            <div>
-                <h3>QUICK LINKS</h3>
-                <a href="./pages/explore.html">Explore</a>
-                <a href="./pages/about.html">About</a>
-                <a href="./pages/contact.html">Contact</a>
-                <a href="./pages/services.html">Services</a>
-                <a href="./pages/articles.html">Articles</a>
-            </div>
-
-            <div class="invisible">
-                <h3>NEWSLETTER</h3>
-                <form action="" class="foot-news-letter">
-                    <input type="email" placeholder="Your Email Address" required>
-                    <br>
-                    <button type="submit">SUBSCRIBE NOW</button>
-                </form>
-            </div>
-
-        </div>
-
 
     </div>
 
@@ -500,6 +493,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
         integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
         crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.6/ScrollTrigger.min.js"
+        integrity="sha512-+LXqbM6YLduaaxq6kNcjMsQgZQUTdZp7FTaArWYFt1nxyFKlQSMdIF/WQ/VgsReERwRD8w/9H9cahFx25UDd+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 
     <script src="navScript.js" defer></script>
 

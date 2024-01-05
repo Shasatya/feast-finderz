@@ -1,10 +1,53 @@
 //loading Animation
-let tl = gsap.timeline();
-tl.from(".main", {
-  x: "100vw",
-  duration: 1,
-  delay: 0.8,
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.from(".logo", {
+  opacity: 0,
+  delay: 0.5,
+  x: -20,
+  ease: "power1.in",
 });
+
+gsap.from(".action-btn", {
+  opacity: 0,
+  delay: 0.5,
+  x: 20,
+  ease: "power1.in",
+});
+
+gsap.from(".links li a", {
+  opacity: 0,
+  delay: 0.5,
+});
+
+gsap.to(".links li a", {
+  opacity: 1,
+  delay: 0.5,
+  stagger: {
+    each: 0.2,
+    from: "edges",
+    ease: "power1.in",
+  },
+});
+
+gsap.from(".welcome-hero-section-content", {
+  opacity: 0,
+  delay: 0.5,
+  y: 100,
+  ease: "power1.in",
+});
+
+// gsap.from(".card", {
+//   scrollTrigger: {
+//     trigger: ".filter-buttons",
+//     start: "top center",
+//     toggleActions: "restart",
+//     scrub: 1, 
+//   },
+//   opacity:0.5,
+//   duration: 3,
+// });
 
 //Popular Items Filter
 let filterButtons = document.querySelectorAll(".filter-buttons button");

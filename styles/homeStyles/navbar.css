@@ -20,7 +20,6 @@
 .navbar .links {
     display: flex;
     gap: 4rem;
-    text-transform: uppercase;
 }
 
 .links a {
@@ -95,7 +94,6 @@
     width: 100%;
     text-align: center;
     margin-top: 30px;
-    text-transform: uppercase;
 }
 
 .overlay a {
